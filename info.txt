@@ -62,3 +62,9 @@ Then we go to boootstrap on alerts components and copy the codes green and red a
 No we will add it to github.
 File -> Add local repository
 Publish it etc..
+
+If we go on heroku there will not shown anything.
+The reason for this is because we do not have our db connected
+over the internet to see it heroku.Instead it is connected locally.
+So 1st way is clearDB mysql but its not free
+Another way is remotemysql.com
