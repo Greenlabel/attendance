@@ -1,0 +1,63 @@
+*******************************************************************************
+The folder stands for Modern PHP Web Development project UDM-section with mysql
+*******************************************************************************
+1. Create index.php file.
+2. Add new folder includes, css folder, scripts folder and db folder.
+    We include bootstrap to our page etc
+    Header.php and footer.php in includes folder 
+
+Include our site.css under bootstrap in index.php
+
+
+----
+for datepicker, use jqueryui site
+and include all the scripts it has. There may be a conflict with jquery version we added so add them all.
+--------------------------------------------------------------------------------------------------------
+
+For succeeding registration we use card component bootstrao to style it.
+
+-----------------------------------
+Create our Database for storing our registrations
+
+
+jumb to localhost/phpmyadmin
+And create the two tables and the db.
+*****************************************
+Create a file that will handle the db and connect it with our site.
+conn.php in db folder 
+Another file crud.php stands for create read update and delete.
+It will be sorted there all the functions and code associated with these operations.
+
+After setting a succesful connection and creation of crud file, we then include it into
+conn file.
+
+We will now chech if we have any values from POST method to store before continuing.
+-if submit value exists.---- if(isset($variable)) means if exists
+===After succedding we will go and see our records.
+We ll use bootstrap to use a nav on top of the pgae,
+so it will help us go and see our records.
+We choose a navbar and we put it to the header, cause we want it available to all pages.
+
+------------------
+After including and changing title, we want to read the records. 
+So we go to crud fileand make another function,
+to handle this action. getAttendees().
+Then we go to viewrecords.php
+and create a table so we can see the results.
+Dynamically we make those rows for the results.
+.
+We make a variable$results and by using crud we attache the results of the function 
+getAttendees we created.
+============================
+For taking the name of specialty instead of id,
+we make a function.Then a variable index.php to handle the results
+and then we modify the html in index.php
+**********************************************
+We now create a neew page called view. We will see the details
+of an input by its id.
+
+We add an errormessage.php and successmessage.php file in the includes.
+Then we go to boootstrap on alerts components and copy the codes green and red alerts.
+***************************************************************************************
+No we will add it to github.
+File -> Add local repository
