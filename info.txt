@@ -61,3 +61,4 @@ Then we go to boootstrap on alerts components and copy the codes green and red a
 ***************************************************************************************
 No we will add it to github.
 File -> Add local repository
+Publish it etc..

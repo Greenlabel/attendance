@@ -77,6 +77,7 @@ if(!isset($_GET['id'])){
     </div>
     <div class="d-grid gap-2">
         <button class="btn btn-success" name="submit" type="submit">Save Changes</button>
+        <a href="viewrecords.php" class="btn btn-outline-primary">Back to List</a>
 
     </div>
 
