@@ -67,4 +67,12 @@ If we go on heroku there will not shown anything.
 The reason for this is because we do not have our db connected
 over the internet to see it heroku.Instead it is connected locally.
 So 1st way is clearDB mysql but its not free
-Another way is remotemysql.com
+Another way is remotemysql.com with workbench.
+
+After connecting and passing from phpmyadmin database to workbench,
+go to visual studio code to conn.php file
+*******************************************
+in case remotemysql doesn't work, we have two alternatives :
+    https://www.freesqldatabase.com/freemysqldatabase/
+
+    https://www.freemysqlhosting.net/register/?action=register
