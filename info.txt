@@ -76,3 +76,14 @@ in case remotemysql doesn't work, we have two alternatives :
     https://www.freesqldatabase.com/freemysqldatabase/
 
     https://www.freemysqlhosting.net/register/?action=register
+--------------------------------------------------------------------------------------------
+Now we will create a folder into db user.php for preventing
+publicly to see all tha parts of the app.Not all the pages.
+
+============================================================================================
+In includes folder we create a file named session.php. where we will start making
+our restrictions for sensitive info.
+There are super variables when a site loads like cookies ,session etc..
+Cookies are on person machine, while session is storedon server
+
+

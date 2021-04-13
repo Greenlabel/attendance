@@ -1,7 +1,7 @@
-<!-- copy paste the content ofindex.php cause it will look like that
+<!-- copy paste the content of index.php cause it will look like that
 We also make the changes for edit page -->
 <?php
-$title = 'Edit Record';
+$title = 'Edit Record';                     
 require_once 'includes/header.php';
 require_once 'db/conn.php';
 
