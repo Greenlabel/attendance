@@ -76,7 +76,6 @@ in case remotemysql doesn't work, we have two alternatives :
     https://www.freesqldatabase.com/freemysqldatabase/
 
     https://www.freemysqlhosting.net/register/?action=register
-<<<<<<< Updated upstream
 --------------------------------------------------------------------------------------------
 Now we will create a folder into db user.php for preventing
 publicly to see all tha parts of the app.Not all the pages.
@@ -92,9 +91,3 @@ After modifying to put login link on the right of top bar, we will create the pa
 login.php
 
 
-=======
-===================================================================
-For creating authority on some pages so than they cannot be seen, lik edit, view etc,
-we create a new file inside includes folder Name it auth_check.php
-We include that into viewrecords.php,view.php, edit.php, delete.php, 
->>>>>>> Stashed changes
