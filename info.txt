@@ -1,30 +1,34 @@
-*******************************************************************************
+---
 The folder stands for Modern PHP Web Development project UDM-section with mysql
-*******************************************************************************
+---
+
 1. Create index.php file.
 2. Add new folder includes, css folder, scripts folder and db folder.
-    We include bootstrap to our page etc
-    Header.php and footer.php in includes folder 
+   We include bootstrap to our page etc
+   Header.php and footer.php in includes folder
 
 Include our site.css under bootstrap in index.php
 
+---
 
-----
 for datepicker, use jqueryui site
 and include all the scripts it has. There may be a conflict with jquery version we added so add them all.
---------------------------------------------------------------------------------------------------------
+
+---
 
 For succeeding registration we use card component bootstrao to style it.
 
------------------------------------
-Create our Database for storing our registrations
+---
 
+Create our Database for storing our registrations
 
 jumb to localhost/phpmyadmin
 And create the two tables and the db.
-*****************************************
+
+---
+
 Create a file that will handle the db and connect it with our site.
-conn.php in db folder 
+conn.php in db folder
 Another file crud.php stands for create read update and delete.
 It will be sorted there all the functions and code associated with these operations.
 
@@ -38,27 +42,32 @@ We ll use bootstrap to use a nav on top of the pgae,
 so it will help us go and see our records.
 We choose a navbar and we put it to the header, cause we want it available to all pages.
 
-------------------
-After including and changing title, we want to read the records. 
+---
+
+After including and changing title, we want to read the records.
 So we go to crud fileand make another function,
 to handle this action. getAttendees().
 Then we go to viewrecords.php
 and create a table so we can see the results.
 Dynamically we make those rows for the results.
 .
-We make a variable$results and by using crud we attache the results of the function 
+We make a variable$results and by using crud we attache the results of the function
 getAttendees we created.
 ============================
 For taking the name of specialty instead of id,
 we make a function.Then a variable index.php to handle the results
 and then we modify the html in index.php
-**********************************************
+
+---
+
 We now create a neew page called view. We will see the details
 of an input by its id.
 
 We add an errormessage.php and successmessage.php file in the includes.
 Then we go to boootstrap on alerts components and copy the codes green and red alerts.
-***************************************************************************************
+
+---
+
 No we will add it to github.
 File -> Add local repository
 Publish it etc..
@@ -71,21 +80,41 @@ Another way is remotemysql.com with workbench.
 
 After connecting and passing from phpmyadmin database to workbench,
 go to visual studio code to conn.php file
-*******************************************
+
+---
+
 in case remotemysql doesn't work, we have two alternatives :
-    https://www.freesqldatabase.com/freemysqldatabase/
+https://www.freesqldatabase.com/freemysqldatabase/
 
     https://www.freemysqlhosting.net/register/?action=register
+
 ===================================================================
 
 +Cookies are on person machine, while session is storedon server.
- Now we will create a folder into db user.php for preventing
+Now we will create a folder into db user.php for preventing
 publicly to see all tha parts of the app.Not all the pages.
 
 After modifying to put login link on the right of top bar, we will create the page.
 login.php
-------------------------------------------------------------------------------------
+
+---
 
 For creating authority on some pages so than they cannot be seen, like edit, view etc,
 we create a new file inside includes folder Name it auth_check.php
-We include that into viewrecords.php,view.php, edit.php, delete.php, 
+We include that into viewrecords.php,view.php, edit.php, delete.php.
+
+---
+
+For sending activation emails when someone is registered, we will need an email service.
+In apache, configuration .ini file , searching for smtp is the code for this task.
+We want here to use a simple and free version. Heroku has one called sendgreid. In order
+to install it we will use composer.
+Open cmd , go to the path that our file is located, and type : composer require sendgrid/sendgrid
+
+---
+
+If the process is completed, we will see two new files in visual studio code composer.json etc.
+We can use instead other free email delivery api's and starting making the new pages that will handle
+email delivering. Creating a new class etc.
+
+---
