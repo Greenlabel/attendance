@@ -60,7 +60,13 @@ $results = $crud->getSpecialties();
         <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number">
         <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
     </div>
-
+   <br>
+   <div class="custom-file">
+        <input type="file" class="custom-file-input" id="avatar" name="avatar" accept = "image/*">
+        <label class="custom-file-label" for="avatar">Upload</label>
+        <small id="avatar" class="form-text text-danger">File upload is optionasl.</small>
+    </div>
+    <br>
     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
     <button type="button" class="btn btn-secondary">Reset</button>
 

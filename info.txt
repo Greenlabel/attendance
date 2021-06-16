@@ -16,7 +16,7 @@ and include all the scripts it has. There may be a conflict with jquery version 
 
 ---
 
-For succeeding registration we use card component bootstrao to style it.
+For succeeding registration we use card component bootstrap to style it.
 
 ---
 
@@ -37,7 +37,7 @@ conn file.
 
 We will now chech if we have any values from POST method to store before continuing.
 -if submit value exists.---- if(isset($variable)) means if exists
-===After succedding we will go and see our records.
+===After succeeding we will go and see our records.
 We ll use bootstrap to use a nav on top of the pgae,
 so it will help us go and see our records.
 We choose a navbar and we put it to the header, cause we want it available to all pages.

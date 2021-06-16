@@ -13,9 +13,22 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $contact = $_POST['phone'];
     $specialty = $_POST['specialty'];
+
+    $orig_file = $_FILES["avatar"]["tmp_name"];
+    $target_dir = 'uploads/';
+    $destination = $target_dir . basename($_FILES["avatar"]["name"]);
+    // basename() is a php function returning the path
+    move_uploaded_file($orig_file, $destination);
+
+    exit();
+    // by typing exit here, stops the execution and the following commands will not be executed.
+    // The next commandsd are for database storing.
+    // Its a trick for testing  
+
     // Call function to insert and track if success or not
     $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $email, $contact, $specialty);
-
+    // $specialtyName = $crud->getSpecialtyById($specialty)
+    
     if($isSuccess){
     //    echo "<h1 class='text-center text-success'>You Have Been Registered!</h1>";
     include 'includes/successmessage.php';
@@ -23,7 +36,7 @@ if(isset($_POST['submit'])){
     else{
     //    echo "<h1 class='text-center text-danger'>There was an error in processing!</h1>";
         include 'includes/errormessage.php';
-}
+        }   
 
 }
 
